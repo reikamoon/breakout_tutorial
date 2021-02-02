@@ -1,0 +1,28 @@
+{
+  "name": "breakout_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --ext .js, .jsx ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reikamoon/breakout_tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reikamoon/breakout_tutorial/issues"
+  },
+  "homepage": "https://github.com/reikamoon/breakout_tutorial#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "dependencies": {
+    "lint": "^0.7.0"
+  }
+}
