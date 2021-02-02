@@ -50,6 +50,7 @@ class Brick {
     this.brickHeight = 20;
     this.brickPadding = 10;
   }
+
   //Draw Bricks
   drawBricks(ctx) {
     for (let c = 0; c < brickColumnCount; c++) {
@@ -66,6 +67,35 @@ class Brick {
           ctx.closePath();
         }
       }
+    }
+  }
+}
+
+
+class Paddle {
+  constructor(canvas) {
+    this.color = "red";
+    this.paddleHeight = 10;
+    this.paddleWidth = 75;
+    this paddleX = (canvas.width - paddleWidth) /2;
+    this.paddleY = canvas.height - paddleHeight;
+  }
+
+  drawPaddle(ctx) {
+    console.log(ctx)
+    ctx.rect(this.paddleX, this.paddleY, this.paddleWidth, this.paddleHeight);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+    ctx.closePath()
+  }
+
+  move(canvas) {
+    if (rightPressed) {
+      this.paddleX += 7;
+      if (this.paddleX + this.paddleWidth > canvas.width) {
+        this.paddleX = canvas.width - this.paddleWidth;    
+      }
+      
     }
   }
 }
