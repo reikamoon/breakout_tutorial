@@ -1,11 +1,12 @@
 {
   "name": "breakout_tutorial",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix --ext .js, .jsx ."
+    "lint": "eslint --fix --ext .js, .jsx .",
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,13 @@
   "devDependencies": {
     "eslint": "^7.18.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-plugin-import": "^2.22.1",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
   },
   "dependencies": {
     "lint": "^0.7.0"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
